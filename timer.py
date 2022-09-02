@@ -1,6 +1,5 @@
 # Importing modules
 from tkinter import *
-from tkinter import messagebox
 from turtle import heading
 from playsound import playsound
 import time
@@ -116,10 +115,6 @@ class Countdown_timer:
         except:
             print("Invalid input")
 
-        #if self.hrs == 0 and self.mins == 0 and self.sec == 0:
-                #messagebox.showwarning('Warning!',\
-                #'Please select a right time to set')
-
         while self.time_left > -1:
             total_minutes, total_seconds = divmod(self.time_left, 60)
             total_hours = 0
@@ -174,9 +169,3 @@ if __name__ == "__main__":
     final_timer = Countdown_timer(root)
     final_timer.current_time_clock()
     root.mainloop()
-
-
-
-
-
-
